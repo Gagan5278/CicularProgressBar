@@ -5,7 +5,7 @@ Below is the output of the deemo
 ![Simulator Screen Shot - iPhone 11 Pro Max - 2020-03-17 at 19 29 06](https://user-images.githubusercontent.com/2304583/76884886-175bfe80-6887-11ea-8a51-f91bf43765ec.png)
 
 
-**HOW TO USE:
+**HOW TO USE**:
 
 1. Drag and Drop *CircularProgressView.swift* in your project.
 2. Open your ViewControler's Storyboard and add a UVIeewe.
