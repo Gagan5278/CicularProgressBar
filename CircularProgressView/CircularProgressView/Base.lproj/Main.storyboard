@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CircularProgressView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bJI-Bf-pnn" customClass="CircularProgressView" customModule="CircularProgressView" customModuleProvider="target">
+                                <rect key="frame" x="67" y="308" width="280" height="280"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="bJI-Bf-pnn" secondAttribute="height" multiplier="1:1" id="xDf-mV-YHD"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8a-zr-kU1">
+                                <rect key="frame" x="141" y="618" width="132" height="30"/>
+                                <state key="normal" title="START ANIMATION"/>
+                                <connections>
+                                    <action selector="startAnimationButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Oj3-tq-Tcf"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bJI-Bf-pnn" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.3125" id="3pe-Vw-fKe"/>
+                            <constraint firstItem="bJI-Bf-pnn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7Fe-tN-xpP"/>
+                            <constraint firstItem="L8a-zr-kU1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="S0J-5r-tPr"/>
+                            <constraint firstItem="bJI-Bf-pnn" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Wuz-xv-WIz"/>
+                            <constraint firstItem="L8a-zr-kU1" firstAttribute="top" secondItem="bJI-Bf-pnn" secondAttribute="bottom" constant="30" id="slB-xS-d63"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="progressView" destination="bJI-Bf-pnn" id="KMt-3Q-TIT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="133.92857142857142"/>
+        </scene>
+    </scenes>
+</document>
