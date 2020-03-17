@@ -12,3 +12,5 @@ Below is the output of the deemo
 3. Set the layout of UIView in storyboard and also set background color (While/Clear)
 4. Set UIView as a subclass of CircularProgressView in storyboard.
 5. You can set stroke colors from Storyboard as below
+
+<img width="632" alt="Screen Shot 2020-03-17 at 7 37 55 PM" src="https://user-images.githubusercontent.com/2304583/76885489-fcd65500-6887-11ea-8c42-d87795837170.png">
