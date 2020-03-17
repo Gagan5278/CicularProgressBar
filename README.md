@@ -7,8 +7,8 @@ Below is the output of the deemo
 
 **HOW TO USE:
 
-Drag and Drop *CircularProgressView.swift* in your project.
-Open your ViewControler's Storyboard and add a UVIeewe.
-Set the layout of UIView in storyboard and also set background color (While/Clear)
-Set UIView as a subclass of CircularProgressView in storyboard.
-You can set stroke colors from Storyboard as below
+1. Drag and Drop *CircularProgressView.swift* in your project.
+2. Open your ViewControler's Storyboard and add a UVIeewe.
+3. Set the layout of UIView in storyboard and also set background color (While/Clear)
+4. Set UIView as a subclass of CircularProgressView in storyboard.
+5. You can set stroke colors from Storyboard as below
