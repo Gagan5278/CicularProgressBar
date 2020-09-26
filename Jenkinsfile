@@ -36,5 +36,15 @@ pipeline {
                 echo 'Hello, JDK'
             }
         }
+      stage('Archive') {
+            steps {
+                archiveArtifacts 'build/Release-iphoneos/PreProd.ipa'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh 'cd /Applications/Transporter.app/Contents/Frameworks/ITunesServices.framework/Versions/A/Frameworks/ITunesSoftwareService.framework/Versions/A/Support/ \n xcrun altool --upload-app -f "/Users/gavishal/.jenkins/workspace/Money/build/Release-iphoneos/PreProd.ipa" -u gagan5278@gmail.com -p Devi_Asha123'
+            }
+        }
     }
 }
