@@ -43,7 +43,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'cd /Applications/Transporter.app/Contents/Frameworks/ITunesServices.framework/Versions/A/Frameworks/ITunesSoftwareService.framework/Versions/A/Support/ \n xcrun altool --upload-app -f "/Users/gavishal/.jenkins/workspace/Money/build/Release-iphoneos/PreProd.ipa" -u gagan5278@gmail.com -p Devi_Asha123'
+                sh 'firebase appdistribution:distribute /Users/gavishal/.jenkins/workspace/Money/build/Release-iphoneos/PreProd.ipa  \ --app 1:734651545121:ios:ce39930948054fe0f4d560  \ --release-notes "Bug fixes and improvements" --testers-file /Users/gavishal/Desktop/testers.txt'
             }
         }
     }
