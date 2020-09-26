@@ -43,7 +43,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                firebase appdistribution:distribute /Users/gavishal/.jenkins/workspace/Money/build/Release-iphoneos/PreProd.ipa  --app 1:734651545121:ios:ce39930948054fe0f4d560   --release-notes "Bug fixes and improvements" --testers-file /Users/gavishal/Desktop/testers.txt
+                'firebase appdistribution:distribute /Users/gavishal/.jenkins/workspace/Money/build/Release-iphoneos/PreProd.ipa  --app 1:734651545121:ios:ce39930948054fe0f4d560   --release-notes "Bug fixes and improvements" --testers-file /Users/gavishal/Desktop/testers.txt'
             }
         }
     }
