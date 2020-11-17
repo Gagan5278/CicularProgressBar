@@ -128,7 +128,7 @@ protocol TimerHandleDelegate {
     // MARK: Starts the timer and the animation.
     public func start(beginingValue: Int, interval: TimeInterval = 1) {
         //Start timer
-        self.delegate?.didEndTimer(sender: self)
+        self.delegate?.didStartTimer(sender: self)
         //Set Inintial value and time inteerval
         self.beginingValue = beginingValue
         self.interval = interval
